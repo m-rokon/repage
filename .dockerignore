@@ -1,0 +1,8 @@
+node_modules
+**/node_modules
+**/dist
+server/scratch
+.git
+*.log
+.env
+.DS_Store

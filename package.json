@@ -1,0 +1,21 @@
+{
+  "name": "repage",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Paste a URL, get clean, copy-paste-ready code (HTML/CSS/JS, React+TS, Framer, Shopify Liquid, Webflow embed) extracted and rebuilt from the live page.",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,magenta \"npm run dev -w server\" \"npm run dev -w web\"",
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "build": "npm run build -w server && npm run build -w web",
+    "start": "npm run start -w server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
