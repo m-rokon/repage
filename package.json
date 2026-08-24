@@ -2,7 +2,28 @@
   "name": "repage",
   "private": true,
   "version": "0.1.0",
-  "description": "Paste a URL, get clean, copy-paste-ready code (HTML/CSS/JS, React+TS, Framer, Shopify Liquid, Webflow embed) extracted and rebuilt from the live page.",
+  "description": "Paste a URL, get clean, copy-paste-ready code (HTML/CSS/JS or React+TS) extracted and rebuilt from the live page.",
+  "license": "MIT",
+  "author": "m-rokon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-rokon/repage.git"
+  },
+  "homepage": "https://github.com/m-rokon/repage#readme",
+  "bugs": {
+    "url": "https://github.com/m-rokon/repage/issues"
+  },
+  "keywords": [
+    "scraping",
+    "playwright",
+    "html",
+    "react",
+    "code-generation",
+    "web-extraction"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "workspaces": [
     "server",
     "web"
